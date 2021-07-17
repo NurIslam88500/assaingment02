@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.coverpage {
+    background-color: #2f288f;
+    width: 100%;
+    height: 600px;
+}
+
+
+/* --- /-Nav section---/!! */
+
+.nav_bar {
+    border: 20px;
+    background-color: #E02C6D;
+    ;
+    padding: 5px;
+    border-radius: 50px;
+    transition: 2sec ease-in-out;
+}
+
+.nav_bar:hover {
+    background-color: rgb(255, 0, 43);
+    transition: 5sec ease-in-out;
+    color: rgb(13, 14, 15);
+    font-weight: 800px;
+}
+
+.nav_bar {
+    text-decoration: none;
+    color: white;
+    margin: 20px;
+    font-size: 15px;
+    font-weight: 900px;
+}
+
+.menu {
+    display: flex;
+    justify-content: left;
+    margin-left: 45px;
+}
+
+
+/* --- /-Nav section end---/!! */
+
+
+/* --- /-main section ---/!! */
+
+main {
+    display: flex;
+    margin: 50px 135px 0px
+}
+
+.title_copa {
+    color: white;
+    font-size: 64px;
+    font-weight: 800px;
+}
+
+.title_copa:hover {
+    color: #E02C6D;
+    transition-duration: 2sec;
+}
+
+.banner_img img {
+    width: 556.01px;
+    height: 438px;
+    top: 153px;
+}
+
+.watch_live:hover {
+    background-color: white;
+    color: #E02C6D;
+    ;
+    border-color: white;
+    font-weight: 900px;
+    font-size: 30px;
+}
+
+.watch_live {
+    background-color: #E02C6D;
+    color: white;
+    font-size: 18px;
+    font-weight: 700px;
+    border-color: #E02C6D;
+    border-radius: 1px;
+    height: 44px;
+    width: 168px;
+}
+
+
+/* --- /-main section end ---/!! */
+
+
+/* .specialplayerone {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    margin-left: 180px;
+    margin-top: 70px;
+    width: 330px;
+    height: 474px;
+    border-color: white;
+}
+
+.playerone {
+    border: 15px;
+    border-radius: 10px;
+}
+
+.playerone img {
+    width: 300px;
+    height: 239px;
+} */
+
+.container {
+    margin: 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 28px;
+    align-items: center;
+}
+
+.container .boxgallery {
+    background-color: white;
+    border: none;
+    box-shadow: 2px 2px 6px 0px;
+    border-radius: .5px;
+    text-align: center;
+    width: 300px;
+    transition: transform .3sec;
+}
+
+.playerimg img {
+    width: 300;
+    height: 256px;
+}
