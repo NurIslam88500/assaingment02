@@ -1,13 +1,121 @@
+/**********************************
+    Common Style or Utilities 
+        **********************************/
+
 body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
     margin: 0;
-    padding: 0;
 }
 
-.coverpage {
-    background-color: #2f288f;
-    width: 100%;
-    height: 600px;
+
+/**********************************
+      Header And Navbar Styling Start
+        **************************************/
+
+.nav-login-bar {
+    background-color: #2D25A0
 }
+
+nav {
+    width: 100%;
+    height: 44px;
+    padding-top: 42px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navigation a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #ffffff;
+    padding-right: 36px;
+}
+
+.login-bar a {
+    text-decoration: none;
+    font: 16px;
+    padding: 10px 24px;
+    background-color: #E02C6D;
+    color: #ffffff;
+}
+
+.fa-sign-in-alt {
+    padding-right: 8px;
+}
+
+.nav-icon {
+    color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+
+/**********************************
+        Header And Navbar Styling Start
+        **************************************/
+
+
+/**********************************
+    Home page / first section styling start 
+        **************************************/
+
+.home-page {
+    display: flex;
+    background-color: #2D25A0;
+}
+
+.home-page-info {
+    width: 50%;
+    margin-left: 11%;
+    margin-right: 7%;
+    margin-top: 121px;
+    margin-bottom: 169px;
+}
+
+.home-page-text {
+    font-weight: bold;
+    font-size: 64px;
+    color: #EEEEEE;
+    margin-top: 0;
+    line-height: 80px;
+    margin-bottom: 27px;
+}
+
+.watch-now-button {
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 24px;
+    background-color: #E02C6D;
+    color: #ffffff;
+}
+
+.fa-arrow-right {
+    margin-left: 8px;
+}
+
+.home-page-banner {
+    width: 50%;
+    margin-right: 10.5%;
+    margin-top: 49px;
+    margin-bottom: 86px;
+    transition: transform 1s ease-in-out;
+}
+
+.home-page-banner img {
+    width: 115%;
+}
+
+.home-page:hover .home-page-banner {
+    transform: rotate(360deg) scale(1.1);
+}
+
+
+/**********************************
+        Home page / first section styling end 
+        **************************************/
 
 
 /* --- /-Nav section---/!! */
@@ -93,47 +201,398 @@ main {
 
 /* --- /-main section end ---/!! */
 
-
-/* .specialplayerone {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 30px;
-    margin-left: 180px;
-    margin-top: 70px;
-    width: 330px;
-    height: 474px;
-    border-color: white;
+.player-album {
+    display: flex;
+    justify-content: center;
 }
 
-.playerone {
-    border: 15px;
+.players {
+    width: 78%;
+    display: grid;
+    padding-top: 70px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 27px;
+    grid-column-gap: 30px;
+}
+
+.player {
+    width: 330px;
+    height: 474px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15)
+}
+
+.player-image img {
+    width: 300px;
+    height: 256px;
+    margin-top: -18px;
+}
+
+.player-info {
+    width: 300px;
+    height: 156px;
+}
+
+.player-info h3 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 16px;
+    margin-bottom: 10px;
+}
+
+.player-info p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.highlights {
+    display: flex;
+}
+
+.highlights-info {
+    width: 46.7%;
+    margin-left: 10.5%;
+    margin-right: 4.5%;
+    margin-top: 236px;
+    margin-bottom: 167px;
+}
+
+.highlights-info h2 {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 8px;
+    line-height: 60px;
+}
+
+.highlights-info p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.highlights-banner {
+    width: 50%;
+    margin-right: 10.5%;
+    margin-top: 177px;
+    margin-bottom: 108px;
+}
+
+.highlights-banner img {
+    width: 105%;
+}
+
+highlights {
+    display: flex;
+}
+
+.highlights-info {
+    width: 46.7%;
+    margin-left: 10.5%;
+    margin-right: 4.5%;
+    margin-top: 236px;
+    margin-bottom: 167px;
+}
+
+.highlights-info h2 {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 8px;
+    line-height: 60px;
+}
+
+.highlights-info p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.highlights-banner {
+    width: 50%;
+    margin-right: 10.5%;
+    margin-top: 177px;
+    margin-bottom: 108px;
+}
+
+.highlights-banner img {
+    width: 105%;
+}
+
+
+/**********************************
+        Highlights/ 3rd Section styling End 
+        *******************************************/
+
+
+/**********************************
+        Last Matches Styling End
+        *******************************************/
+
+.last-matches {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.last-match {
+    width: 23%;
+    background-color: #ffffff;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 2px 2px 8px gray;
     border-radius: 10px;
 }
 
-.playerone img {
-    width: 300px;
-    height: 239px;
-} */
+.match-info {
+    text-align: center;
+}
 
-.container {
-    margin: 80px;
+.match-info h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.match-info h4 {
+    font-size: 14px;
+}
+
+.match-info p {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.flag {
+    width: 40%;
+    padding: 20px;
+}
+
+.flag img {
+    width: 100%;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+}
+
+.text h4 {
+    padding-left: 30px;
+    margin: 0;
+    color: red;
+}
+
+.text h1 {
+    font-size: 26px;
+    padding-left: 30px;
+    margin: 0;
+}
+
+
+/**********************************
+         Last Matches Styling End
+        *******************************************/
+
+
+/* News */
+
+.news-container {
+    margin: 100px 0;
+}
+
+.section-title {
+    font-size: 48PX;
+    color: red;
+    text-align: center;
+}
+
+.news-blog {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 28px;
-    align-items: center;
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+    margin: 50px;
 }
 
-.container .boxgallery {
-    background-color: white;
-    border: none;
-    box-shadow: 2px 2px 6px 0px;
-    border-radius: .5px;
-    text-align: center;
+.news {
     width: 300px;
-    transition: transform .3sec;
+    height: 200px;
+    border: 2px solid purple;
+    border-radius: 10px;
+    position: relative;
+    margin: 10px;
+    overflow: hidden;
+    box-shadow: 2px 2px 8px rgb(13, 29, 252);
 }
 
-.playerimg img {
-    width: 300;
-    height: 256px;
+.thumbnail img {
+    width: 120%;
+}
+
+.main-news {
+    position: absolute;
+    width: 300px;
+    top: 0;
+    display: none;
+}
+
+.main-news h3 {
+    background-color: violet;
+    text-align: center;
+}
+
+.news:hover .main-news {
+    display: block;
+    background-color: rgba(83, 16, 240, 0.5);
+    color: whitesmoke;
+}
+
+.news:hover .thumbnail {
+    transform: scale(1.4) skew(360deg);
+    transition: transform 1s ease-in;
+}
+
+
+/**********************************
+       Footer Styling Start
+        *******************************************/
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 63px;
+}
+
+.footer-img {
+    width: 33%;
+}
+
+.footer-img img {
+    width: 100%;
+}
+
+.footer-text {
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.footer-socialmedia {
+    display: flex;
+}
+
+.icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    margin: 0px 14px;
+    background-color: #969BAB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fab {
+    color: black;
+    font-size: 24px;
+}
+
+
+/**********************************
+        Footer Styling End
+        *******************************************/
+
+
+/* Responsive For Mobile Phone */
+
+@media only screen and (max-width:600px) {
+    section {
+        width: 100%;
+    }
+    /* Navigation Bar  */
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    .navigation a {
+        display: none;
+        margin: 25px;
+    }
+    .nav-icon {
+        display: inline-block;
+    }
+    .fa-bars:before {
+        content: "\f0c9";
+        margin-left: 16px;
+    }
+    .login-bar a {
+        margin-right: 21px;
+    }
+    /* Home Page  */
+    .home-page {
+        flex-direction: column;
+        width: 100%;
+    }
+    .home-page-info {
+        width: 100%;
+        margin: 46px 66px 50px 16px;
+    }
+    .home-page-text {
+        font-size: 36px;
+    }
+    .home-page-banner {
+        width: 90%;
+        margin: 0px 15px 61px 15px;
+    }
+    .home-page-banner img {
+        width: 90%;
+    }
+    /* Responsive Player Album  */
+    .players {
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+    .player {
+        margin: 15px 24px;
+    }
+    /* Responsive Highlight */
+    .highlights {
+        flex-direction: column;
+        width: 100%;
+    }
+    .highlights-info {
+        width: 100%;
+        margin: 46px 66px 50px 18px;
+    }
+    .highlights-info h1 {
+        font-size: 30px;
+    }
+    .highlights-banner {
+        width: 90%;
+        margin: 60px 15px 29px 15px;
+    }
+    .highlights-banner img {
+        width: 100%;
+    }
+    /* Responsive Last Matches */
+    .last-matches {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0;
+    }
+    .last-match {
+        width: 95%;
+        margin: 5px;
+    }
+    /* Latest News Responsive */
+    .news-blog {
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0;
+    }
+    .news {
+        margin-left: 35px;
+    }
 }
